@@ -1,0 +1,71 @@
+<!DOCTYPE html>                                                 <!--informa aos navegadores que o documento é html-->
+<html lang='pt-br'>                                             <!--abertura html, e idioma português-->
+<head>                                                          <!--abertura da area de cabeçalho, configurações comportamentais do site-->
+    <meta charset="UTF-8"/>                                      <!--conjunto de caractéres-->
+    <title>Tudo sobre google grass</title>                       <!--coloca nome na aba-->
+    <link rel="stylesheet" href="_css/estilo.css"/>               <!--link para a aba css, de style do site, href é hiperlink-->
+    <link rel="stylesheet" href="_css/media.css"/>                 <!--link para aquivo css fotos-->
+</head>                                                                  <!--fechamento do head-->
+<script language="JavaScript" src="_javascript/funcoes.js"></script>  <!--link para outra aba, onde vai se desenvolver as finções javascript-->
+<body>                                                          <!--onde tudo tem que aprecer, textos imagens do site-->
+<div id="interface">                                            <!--tudo que esta dentro da tag <div> é relativo, então não flutua-->
+
+
+    <header id="cabecalho">                                         <!--header define a parte do cabeçalho, e temos ali um id que vai ser usado no css na outra aba-->
+        <hgroup>                                                        <!--hgroup= tudo que estiver entre esta tag seré considerado um grupo de títulos-->
+            <h1>Google Glass</h1>                                           <!--h1=título 1-->
+            <h2>A revolução do Google está chegando</h2>                    <!--h2=título sub-títudo de h1-->
+        </hgroup>                                                       <!--fechamento de hgroup-->
+
+
+        <img id="icone" src="_imagens/multimidia.png"/>     <!--img=imagem/ id=identificação/ rsc=" " =direciona para pasta no computador-->
+
+
+        <nav id="menu">                                          <!--nav=tudo que estiver dentro desta tag vai ser considerado menu de navegação-->
+            <h1>Menu Principal</h1>                                  <!--título-->
+            <ul type="disc">                                         <!--ul=é uma lista não ordenada, com demarcadores ex: type="square" ou cicle-->
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>                   <!--li=lista a= ancora, base da criação do linkmas para que ele funcione temos que usar href-->
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="_multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>                                                    <!--fechamento de ul-->
+        </nav>                                                   <!--fechamento de nav-->
+
+    </header>
+    <section id="corpo-full">
+        <article id="noticia-principal">
+    <header id="cabecalho-artigo">
+        <hgroup>
+    <h3>Sons > Videos</h3>
+    <h1>Galeria de videos e audios do Google Glass</h1>
+    <h2>por Desenvolvedor</h2>
+    <h3 class="direita">Atualizado em  20/junho/2016</h3>
+        </hgroup>
+    </header>
+
+<div id="tv-radio">
+    <audio id="musica" controls="controls">
+     <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+        <!--se for colocar nos formatos dos outros navegadores deve colocar aqui os outros formatos desta forma:
+        <source src"media/2009-lovers-carvings-bibio.m4a" type="audio/x-acc">
+        <source src"media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"> pelo programa miro video que convertemos-->
+        Desculpa, mas não foi possivel carregar o audio!
+    </audio>
+    <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+    <source src="_media/getting-started.mp4" type="video/mp4"/>
+        Desculpa, mas não foi possivel carregar o video!
+    </video>
+</div>
+        </article>
+         </section>
+
+    <footer id="rodape">                                              <!--rodapé, com id de rodapé-->
+
+        <p>Copyright 2016-Desenvolvedor</br>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a></p>            
+
+    </footer>              <!--fechamento-->
+</div>                 <!--fechamento-->
+</body>                <!--fechamento-->
+</html>                <!--fechamento-->

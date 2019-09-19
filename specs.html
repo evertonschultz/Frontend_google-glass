@@ -1,0 +1,72 @@
+<!DOCTYPE html>                                                 <!--informa aos navegadores que o documento é html-->
+<html lang='pt-br'>                                             <!--abertura html, e idioma português-->
+<head>                                                          <!--abertura da area de cabeçalho, configurações comportamentais do site-->
+
+    <meta charset="UTF-8"/>                                      <!--conjunto de caractéres-->
+    <title>Tudo sobre google grass</title>                       <!--coloca nome na aba-->
+    <link rel="stylesheet" href="_css/estilo.css">               <!--link para a aba css, de style do site, href é hiperlink-->
+    <link rel="stylesheet" href="_css/specs.css"/>
+</head>                                                         <!--fechamento do head-->
+<script language="JavaScript" src="_javascript/funcoes.js"></script> <!--link para outra aba, onde vai se desenvolver as finções javascript-->
+<body>                                                          <!--onde tudo tem que aprecer, textos imagens do site-->
+<div id="interface">                                            <!--tudo que esta dentro da tag <div> é relativo, então não flutua-->
+
+
+    <header id="cabecalho">                                         <!--header define a parte do cabeçalho, e temos ali um id que vai ser usado no css na outra aba-->
+        <hgroup>                                                        <!--hgroup= tudo que estiver entre esta tag seré considerado um grupo de títulos-->
+            <h1>Google Glass</h1>                                           <!--h1=título 1-->
+            <h2>A revolução do Google está chegando</h2>                    <!--h2=título sub-títudo de h1-->
+        </hgroup>                                                       <!--fechamento de hgroup-->
+
+
+        <img id="icone" src="_imagens/especificacoes.png"/>     <!--img=imagem/ id=identificação/ rsc=" " =direciona para pasta no computador-->
+
+
+        <nav id="menu">                                          <!--nav=tudo que estiver dentro desta tag vai ser considerado menu de navegação-->
+            <h1>Menu Principal</h1>                                  <!--título-->
+            <ul type="disc">                                         <!--ul=é uma lista não ordenada, com demarcadores ex: type="square" ou cicle-->
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html">Home</a></li>                   <!--li=lista a= ancora, base da criação do linkmas para que ele funcione temos que usar href-->
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="_multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>                                                    <!--fechamento de ul-->
+        </nav>                                                   <!--fechamento de nav-->
+
+    </header>
+
+   <section id="corpo-full">
+       <article id="noticia">                                          <!--artigo-->
+           <header id="cabecalho-artigo">                                  <!--header como cabeçhalho do artigo-->
+               <hgroup>                                                        <!--hgruop= tudo que estiver entre esta tag será considerado grupo de títulos-->
+                   <h3>Glass > Especificações</h3>
+                   <h1>Raio-X no Google Glass</h1>
+                   <h2>por Desenvolvedor</h2>
+                   <h3 class="direita">Atualizado em 06/junho/2016</h3>             <!--class="direita"  h3 podera ser configurado em css-->
+               </hgroup>
+           </header>
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+<section id="conteudo">
+    <img src="_imagens/glass-esquema-marcado.jpg" usemap="meumapa"/> <!--imagem na qual vai ser usado o nome do map abaixo que vai fazer a ligação com a imagem-->
+    <map name="meumapa"> <!--mapa para mapear um imagem com nome que funciona como um id-->
+        <area shape="rect" coords="182,220,270,245" href="google-glass.html#tela" target="janela"/> <!-- area, shape retangular, coordenadas da imagem, hiperlink, id, alvo-->
+        <area shape="circle" coords="158,244,12" href="google-glass.html#camera" target="janela"/> <!-- circule tem como coodenadas as coordenadas do meio e a medida do raio-->
+        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela"/> <!-- poligonal devese colocar as cordenadas de todos os cantos no sentido horario-->
+        <area shape="circle" coords="78,51,12" href="google-glass.html#gadgets" target="janela"/>
+    </map>
+    <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe> <!-- iframe faz com que possamos abrir uma janela de outro navegado dendro da de uma aba, este documento sera visualizado com suas  com barras de rolagem-->
+</section>
+          </article>
+
+</section>
+    <footer id="rodape">                                              <!--rodapé, com id de rodapé-->
+
+        <p>Copyright 2016-Desenvolvedor</br>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+            
+
+    </footer>              <!--fechamento-->
+</div>                 <!--fechamento-->
+</body>                <!--fechamento-->
+</html>                <!--fechamento-->
